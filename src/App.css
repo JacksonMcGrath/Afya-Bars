@@ -1,3 +1,84 @@
+
+body {
+  font-family: 'Dosis'
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-size: 300%;
+  margin: 20px;
+  letter-spacing: 3px;
+}
+
+.thick {
+  font-weight: 100;
+}
+
+.builder {
+  margin: 0 auto;
+  background-color: grey;
+  width: 960px;
+  height: 593px;
+  padding: 20px;
+}
+
+.builder-top {
+  display: inline-flex;
+  justify-content: space-around;
+  background-color: grey;
+}
+
+.virtual-bar {
+  background-color: white;
+  margin: 0;
+  width: 660px;
+  height: 393px;
+}
+
+.ingredient-list {
+  background-color: white;
+  margin: 0;
+  width: 240px;
+  height: 393px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .App {
   text-align: center;
 }

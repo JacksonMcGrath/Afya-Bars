@@ -10,35 +10,51 @@ import Story from './Story'
 import User from './User'
 
 class App extends Component {
+
   constructor(){
     super()
   
     this.state = {
-      create: false,
+      create: true,
       login: false,
       register: false,
       story: false, 
       user: false,
     }
+
+    this.toggleHome = this.toggleHome.bind(this)
+    this.toggleCreate = this.toggleCreate.bind(this
+      )
   }
+
+  toggleCreate = () => {
+    document.querySelector("#story").style.display = "none";
+    const create = this.create;
+    this.setState({
+        create: !create
+    })
+  }
+
+  toggleHome = () => {
+    document.querySelector("#create").style.display = "none";
+    const story = this.story;
+    this.setState({
+        story: true
+    })
+  }
+
   render() {
     return (
       <div className="App">
-        <header>
-          <h1>UBAR</h1>
-          <nav>
-            <button className="nav-bar">Create a bar</button>
-            <button className="nav-bar">Login</button>
-            <button className="nav-bar">Register</button>
-            <button className="nav-bar">view your profile</button>
-          </nav>
-        </header>
-
+        <h1 className="title">afya <span className="thick">bars</span></h1>
+        <style>
+          @import url('https://fonts.googleapis.com/css?family=Dosis|Londrina+Outline|Londrina+Solid');
+        </style>
         {this.state.create && <Create/>}
         {this.state.login && <Login/>}
         {this.state.register && <Register/>}
-        {this.state.story && <story/>}
-        {this.state.user && <user/>}
+        {this.state.story && <Story/>}
+        {this.state.user && <User/>}
       </div>
     );
   }

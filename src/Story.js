@@ -5,14 +5,19 @@ class Story extends Component {
 		super()
 	
 		this.state = {
-	
+			
 		}
 	}
 
 	render(){
 
 		return (
-			<h1>Story component</h1>
+			<div id="story">
+				<h1 onClick={this.toggleHome}>Afya Bars</h1>
+				<div className="scene">
+					
+				</div>
+			</div>
 		)
 	}
 }

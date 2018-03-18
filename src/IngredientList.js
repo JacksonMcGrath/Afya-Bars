@@ -6,7 +6,7 @@ class IngredientList extends Component {
 		super()
 	
 		this.state = {
-	
+			more: false,
 		}
 	}
 
@@ -14,7 +14,9 @@ class IngredientList extends Component {
 
 		return (
 			<div className="ingredient-list">
-				
+				<ul className="ingredient-list">
+					<h2>IngredientList</h2> 
+				</ul>
 			</div>
 		)
 	}

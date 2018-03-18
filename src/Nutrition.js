@@ -14,7 +14,7 @@ class Nutrition extends Component {
 
 		return (
 			<div className="nutrition">
-				
+				<h2 className="cals">Calories</h2>
 			</div>
 		)
 	}

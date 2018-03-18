@@ -1,11 +1,30 @@
 
 body {
-  font-family: 'Dosis'
+  font-family: 'Dosis';
 }
 
 h1 {
   margin: 0;
   padding: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background-color: rgba(0,0,0,0);
+  width: 150px;
+  height: 50px;
+  font-family: 'Dosis';
+  font-size: 13pt;
+}
+
+nav {
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
 .title {
@@ -24,12 +43,14 @@ h1 {
   width: 960px;
   height: 593px;
   padding: 20px;
+  display: inline-flex;
+  flex-wrap: wrap;
 }
 
 .builder-top {
-  display: inline-flex;
   justify-content: space-around;
   background-color: grey;
+  display: inline-flex;
 }
 
 .virtual-bar {
@@ -39,10 +60,18 @@ h1 {
   height: 393px;
 }
 
+.nutrition {
+  margin: 5px 0 -10px 0;
+  width: 960px;
+  height: 175px;
+  background-color: white;
+  display: inline-flex;
+}
+
 .ingredient-list {
   background-color: white;
-  margin: 0;
-  width: 240px;
+  margin: 0 0 0 20px;
+  width: 220px;
   height: 393px; 
 }
 

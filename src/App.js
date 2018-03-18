@@ -18,13 +18,16 @@ class App extends Component {
       create: true,
       login: false,
       register: false,
-      story: false, 
+      story: false,
       user: false,
+      about: false,
+      login: false,
     }
 
     this.toggleHome = this.toggleHome.bind(this)
-    this.toggleCreate = this.toggleCreate.bind(this
-      )
+    this.toggleCreate = this.toggleCreate.bind(this)
+    this.toggleAbout = this.toggleAbout.bind(this)
+    this.toggleLogin = this.toggleLogin.bind(this)
   }
 
   toggleCreate = () => {
@@ -39,7 +42,23 @@ class App extends Component {
     document.querySelector("#create").style.display = "none";
     const story = this.story;
     this.setState({
-        story: true
+        story: !story
+    })
+  }
+
+  toggleAbout = () => {
+    document.querySelector("#create").style.display = "none";
+    const about = this.about;
+    this.setState({
+        about: !about
+    })
+  }
+
+  toggleLogin = () => {
+    document.querySelector("#create").style.display = "none";
+    const login = this.login;
+    this.setState({
+        login: !login
     })
   }
 
@@ -47,6 +66,12 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="title">afya <span className="thick">bars</span></h1>
+        <nav>
+          <button className="home-nav" onClick={this.toggleHome}>home</button>
+          <button className="home-nav" onClick={this.toggleCreate}>create</button>
+          <button className="home-nav" onClick={this.toggleAbout}>about</button>
+          <button className="home-nav" onClick={this.toggleLogin}>login</button>
+        </nav>
         <style>
           @import url('https://fonts.googleapis.com/css?family=Dosis|Londrina+Outline|Londrina+Solid');
         </style>

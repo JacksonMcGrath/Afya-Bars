@@ -19,17 +19,12 @@ class Create extends Component {
 			<div id="create">
 				<div className="builder">
 					<div className="builder-top">
-						<div className="virtual-bar">
-							<VirtualBar/>
-						</div>
-						<div className="ingredient-list">
-							<IngredientList/>
-						</div>
+						<VirtualBar/>
+						<IngredientList/>
 					</div>
-					<div className="nutrition">
-						<Nutrition/>
-					</div>
+					<Nutrition/>
 				</div> 
+				
 			</div> 
 
 		)

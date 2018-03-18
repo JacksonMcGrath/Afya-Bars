@@ -26,19 +26,19 @@ class VirtualBar extends Component {
 
 		return (
 			<div className="virtual-bar">
-				{this.state.base && <img src="" className="base"><img>}
-				{this.state.lyr1 && <img src="" className="lyr1"><img>}
-				{this.state.lyr2 && <img src="" className="lyr2"><img>}
-				{this.state.lyr3 && <img src="" className="lyr3"><img>}
-				{this.state.lyr4 && <img src="" className="lyr4"><img>}
-				{this.state.lyr5 && <img src="" className="lyr5"><img>}
-				{this.state.lyr6 && <img src="" className="lyr6"><img>}
-				{this.state.lyr7 && <img src="" className="lyr7"><img>}
-				{this.state.lyr8 && <img src="" className="lyr8"><img>}
-				{this.state.lyr9 && <img src="" className="lyr9"><img>}
-				{this.state.lyr10 && <img src="" className="lyr10"><img>}
-				{this.state.lyr11 && <img src="" className="lyr11"><img>}
-				{this.state.lyr12 && <img src="" className="lyr12"><img>}
+				{this.state.base && <img src="" className="base"></img>}
+				{this.state.lyr1 && <img src="" className="lyr1"></img>}
+				{this.state.lyr2 && <img src="" className="lyr2"></img>}
+				{this.state.lyr3 && <img src="" className="lyr3"></img>}
+				{this.state.lyr4 && <img src="" className="lyr4"></img>}
+				{this.state.lyr5 && <img src="" className="lyr5"></img>}
+				{this.state.lyr6 && <img src="" className="lyr6"></img>}
+				{this.state.lyr7 && <img src="" className="lyr7"></img>}
+				{this.state.lyr8 && <img src="" className="lyr8"></img>}
+				{this.state.lyr9 && <img src="" className="lyr9"></img>}
+				{this.state.lyr10 && <img src="" className="lyr10"></img>}
+				{this.state.lyr11 && <img src="" className="lyr11"></img>}
+				{this.state.lyr12 && <img src="" className="lyr12"></img>}
 			</div>
 		)
 	}

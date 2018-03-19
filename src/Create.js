@@ -17,14 +17,8 @@ class Create extends Component {
 		return (
 			
 			<div id="create">
-				<div className="builder">
-					<div className="builder-top">
-						<VirtualBar/>
-						<IngredientList/>
-					</div>
-					<Nutrition/>
-				</div> 
-				
+				<VirtualBar/>
+				<IngredientList/>
 			</div> 
 
 		)

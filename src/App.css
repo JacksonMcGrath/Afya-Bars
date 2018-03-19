@@ -37,43 +37,41 @@ nav {
   font-weight: 100;
 }
 
-.builder {
+#create {
   margin: 0 auto;
   background-color: grey;
   width: 960px;
-  height: 593px;
+  height: 480px;
   padding: 20px;
   display: inline-flex;
   flex-wrap: wrap;
-}
-
-.builder-top {
-  justify-content: space-around;
-  background-color: grey;
-  display: inline-flex;
 }
 
 .virtual-bar {
   background-color: white;
   margin: 0;
   width: 660px;
-  height: 393px;
-}
-
-.nutrition {
-  margin: 5px 0 -10px 0;
-  width: 960px;
-  height: 175px;
-  background-color: white;
-  display: inline-flex;
+  height: 475px;
 }
 
 .ingredient-list {
   background-color: white;
   margin: 0 0 0 20px;
   width: 220px;
-  height: 393px; 
+  height: 475px; 
 }
+
+/*nutrition component to be added later*/
+/*.nutrition {
+  margin: 5px 0 -10px 0;
+  width: 960px;
+  height: 175px;
+  background-color: white;
+  display: inline-flex;
+}
+*/
+
+
 
 
 

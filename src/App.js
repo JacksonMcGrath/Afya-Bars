@@ -11,6 +11,14 @@ import User from './User'
 
 class App extends Component {
 
+  componentDidMount(){
+    window.addEventListener("scroll", this.handleScroll)
+  }
+
+  componentWillUnmount(){
+    window.removeEventListener("scroll", this.handleScroll)
+  }
+
   constructor(){
     super()
   
@@ -29,10 +37,6 @@ class App extends Component {
     this.toggleAbout = this.toggleAbout.bind(this)
     this.toggleLogin = this.toggleLogin.bind(this)
     this.handleScroll = this.handleScroll.bind(this)
-  }
-
-  componentDidMount(){
-    window.addEventListener('scroll', this.handleScroll)
   }
 
   toggleCreate = () => {
@@ -68,8 +72,8 @@ class App extends Component {
   }
 
   handleScroll = () => {
-    let foreground = document.querySelector(".foreground");
-    foreground.style.top = -(window.pageYOffset / 4) + 'px';
+    let tree1 = document.querySelector(".tree1");
+    tree1.style.margin = -(window.pageYOffset/4) + 'px';
   }
 
   render() {

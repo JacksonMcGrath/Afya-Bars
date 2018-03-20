@@ -15,10 +15,10 @@ class App extends Component {
     super()
   
     this.state = {
-      create: true,
+      create: false,
       login: false,
       register: false,
-      story: false,
+      story: true,
       user: false,
       about: false,
       login: false,

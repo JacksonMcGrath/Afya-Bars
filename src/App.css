@@ -58,7 +58,7 @@ nav {
   background-color: white;
   margin: 0 0 0 20px;
   width: 220px;
-  height: 475px; 
+  height: 475px;
 }
 
 /*nutrition component to be added later*/
@@ -71,7 +71,17 @@ nav {
 }
 */
 
+/*STORY*/
 
+.float-left {
+  position: fixed;
+  float: left;
+}
+
+.foreground {
+  width: 500px;
+  margin-top: -155px;
+}
 
 
 

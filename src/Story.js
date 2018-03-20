@@ -12,12 +12,13 @@ class Story extends Component {
 	render(){
 
 		return (
+			
 			<div id="story">
-				<h1 onClick={this.toggleHome}>Afya Bars</h1>
-				<div className="scene">
-					
+				<div className="float-left">
+					<img className="foreground" src="https://i.imgur.com/zjmns2r.png"/>
 				</div>
 			</div>
+
 		)
 	}
 }

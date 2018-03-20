@@ -15,10 +15,12 @@ class Story extends Component {
 			
 			<div id="story">
 				<div className="float-left">
-					<div className="foreground tree1"></div>
+					<div className="tree1"></div>
+					<div className="tree3"></div>
 				</div>
 				<div className="float-right">
-					<div className="foreground tree2"></div>
+					<div className="tree2"></div>
+					<div className="tree4"></div>
 				</div>
 			</div>
 

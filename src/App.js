@@ -72,11 +72,26 @@ class App extends Component {
   }
 
   handleScroll = () => {
+    // LEFT
     let tree1 = document.querySelector(".tree1");
-    tree1.style.margin = -(window.pageYOffset*1.75) + 'px ' + -(window.pageYOffset*.75) + 'px';
+    tree1.style.margin = -(window.pageYOffset * 1.75) + 'px ' + -(window.pageYOffset * 1.55) + 'px';
+    tree1.style.width = (500 + (window.pageYOffset * .85)) + 'px';
 
+    let tree3 = document.querySelector(".tree3");
+    tree3.style.margin = (200 -(window.pageYOffset * 1.25)) + 'px ' + -(window.pageYOffset * 1.25) + 'px';
+    tree3.style.width = (400 + (window.pageYOffset * .65)) + 'px';
+
+    // RIGHT
     let tree2 = document.querySelector(".tree2");
-    tree2.style.margin = -(window.pageYOffset*1.5) + 'px ' + (window.pageYOffset*.15) + 'px';
+    tree2.style.margin = -(window.pageYOffset * 2.5) + 'px ' + (window.pageYOffset * .15) + 'px';
+    tree2.style.width = (500 + (window.pageYOffset * .85)) + 'px';
+    tree2.style.height = (500 + (window.pageYOffset * .85)) + 'px';
+
+    let tree4 = document.querySelector(".tree4");
+    tree4.style.margin = (200 -(window.pageYOffset * 1.15)) + 'px ' + (window.pageYOffset * .35) + 'px';
+    tree4.style.width = (500 + (window.pageYOffset * .65)) + 'px';
+    tree4.style.height = (500 + (window.pageYOffset * .65)) + 'px';
+
   }
 
   render() {

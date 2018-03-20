@@ -9,6 +9,7 @@ body {
 h1 {
   margin: 0;
   padding: 0;
+  font-weight: 700;
 }
 
 h2 {
@@ -109,6 +110,17 @@ nav {
   margin-top: 200px;
 }
 
+.tree5 {
+  position: fixed;
+  z-index: -3;
+  float: left;
+  width: 370px;
+  height: 370px;
+  background: url("https://i.imgur.com/SJ1zdWL.png") no-repeat 0px 0px;
+  background-size: 100%;
+  margin-top: 380px;
+}
+
 .float-right {
   width: 500px;
   height: 500px;
@@ -135,13 +147,27 @@ nav {
 .tree4 {
   position: fixed;
   z-index: -2;
-  margin-top: 200px;
+  margin-top: 250px;
   width: 500px;
   height: 500px;
   background-image: url("https://i.imgur.com/XA1esLe.png");
   background-repeat: no-repeat;
   background-position: top right;
   float: left;
+  background-size: 100%;
+  transform: scaleX(-1);
+}
+
+.tree6 {
+  position: fixed;
+  right: 0;
+  z-index: -3;
+  margin-top: 540px;
+  width: 300px;
+  height: 300px;
+  background-image: url("https://i.imgur.com/h5CBotv.png");
+  background-repeat: no-repeat;
+  background-position: top right;
   background-size: 100%;
   transform: scaleX(-1);
 }

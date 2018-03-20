@@ -17,6 +17,9 @@ class Story extends Component {
 				<div className="float-left">
 					<img className="foreground" src="https://i.imgur.com/zjmns2r.png"/>
 				</div>
+				<div className="float-right">
+					<img className="foreground" src="https://i.imgur.com/muEHrSF.png"/>
+				</div>
 			</div>
 
 		)

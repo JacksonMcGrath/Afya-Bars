@@ -65,7 +65,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="title">afya <span className="thick">bars</span></h1>
+        <h1 className="title">Afya <span className="thick">Bars</span></h1>
         <nav>
           <button className="home-nav" onClick={this.toggleHome}>home</button>
           <button className="home-nav" onClick={this.toggleCreate}>create</button>

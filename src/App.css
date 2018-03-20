@@ -73,15 +73,29 @@ nav {
 
 /*STORY*/
 
+#story {
+
+}
+
 .float-left {
   position: fixed;
   float: left;
+}
+
+.float-right {
+  width: 170vw;
+  position: fixed;
+  float: right;
+  transform: scaleX(-1);
+  margin-top: -110px;
 }
 
 .foreground {
   width: 500px;
   margin-top: -155px;
 }
+
+
 
 
 

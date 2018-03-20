@@ -28,6 +28,11 @@ class App extends Component {
     this.toggleCreate = this.toggleCreate.bind(this)
     this.toggleAbout = this.toggleAbout.bind(this)
     this.toggleLogin = this.toggleLogin.bind(this)
+    this.handleScroll = this.handleScroll.bind(this)
+  }
+
+  componentDidMount(){
+    window.addEventListener('scroll', this.handleScroll)
   }
 
   toggleCreate = () => {
@@ -62,24 +67,60 @@ class App extends Component {
     })
   }
 
+  handleScroll = () => {
+    let foreground = document.querySelector(".foreground");
+    foreground.style.top = -(window.pageYOffset / 4) + 'px';
+  }
+
   render() {
     return (
       <div className="App">
-        <h1 className="title">Afya <span className="thick">Bars</span></h1>
+        <style>
+          @import url('https://fonts.googleapis.com/css?family=Dosis|Londrina+Outline|Londrina+Solid');
+        </style>
+        <h1 className="title">Afya <span className="thin">Bars</span></h1>
         <nav>
           <button className="home-nav" onClick={this.toggleHome}>home</button>
           <button className="home-nav" onClick={this.toggleCreate}>create</button>
           <button className="home-nav" onClick={this.toggleAbout}>about</button>
           <button className="home-nav" onClick={this.toggleLogin}>login</button>
         </nav>
-        <style>
-          @import url('https://fonts.googleapis.com/css?family=Dosis|Londrina+Outline|Londrina+Solid');
-        </style>
         {this.state.create && <Create/>}
         {this.state.login && <Login/>}
         {this.state.register && <Register/>}
         {this.state.story && <Story/>}
         {this.state.user && <User/>}
+
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
       </div>
     );
   }

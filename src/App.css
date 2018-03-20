@@ -19,7 +19,7 @@ button {
   width: 150px;
   height: 50px;
   font-family: 'Dosis';
-  font-size: 13pt;
+  font-size: 14pt;
 }
 
 nav {
@@ -33,7 +33,7 @@ nav {
   letter-spacing: 3px;
 }
 
-.thick {
+.thin {
   font-weight: 100;
 }
 
@@ -74,25 +74,37 @@ nav {
 /*STORY*/
 
 #story {
-
+  width: 100vw;
 }
 
 .float-left {
+  width: 500px;
+  height: 3000px;
   position: fixed;
   float: left;
 }
 
 .float-right {
-  width: 170vw;
+  width: 500px;
+  height: 3000px;
   position: fixed;
   float: right;
-  transform: scaleX(-1);
-  margin-top: -110px;
 }
 
 .foreground {
-  width: 500px;
-  margin-top: -155px;
+
+}
+
+.tree1 {
+  background-image: url("https://i.imgur.com/zjmns2r.png"); 
+  background-position: center;
+  z-index: 3;
+}
+
+.tree2 {
+  background-image: url("https://i.imgur.com/muEHrSF.png");
+  transform: scaleX(-1);
+  z-index: 3;
 }
 
 

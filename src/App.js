@@ -73,7 +73,10 @@ class App extends Component {
 
   handleScroll = () => {
     let tree1 = document.querySelector(".tree1");
-    tree1.style.margin = -(window.pageYOffset/4) + 'px';
+    tree1.style.margin = -(window.pageYOffset*1.75) + 'px ' + -(window.pageYOffset*.75) + 'px';
+
+    let tree2 = document.querySelector(".tree2");
+    tree2.style.margin = -(window.pageYOffset*1.5) + 'px ' + (window.pageYOffset*.15) + 'px';
   }
 
   render() {
@@ -95,6 +98,36 @@ class App extends Component {
         {this.state.story && <Story/>}
         {this.state.user && <User/>}
 
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
+        <h1>dummy</h1>
         <h1>dummy</h1>
         <h1>dummy</h1>
         <h1>dummy</h1>

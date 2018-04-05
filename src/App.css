@@ -3,13 +3,14 @@
 }
 
 body {
-  font-family: 'Dosis';
+  font-family: 'Montserrat';
+  background-color: #9dd1d9;
+  overflow-x: hidden;
 }
 
 h1 {
   margin: 0;
   padding: 0;
-  font-weight: 700;
 }
 
 h2 {
@@ -17,24 +18,38 @@ h2 {
   padding: 0;
 }
 
-button {
+.home-nav {
   border: none;
+  box-shadow: 0 2px 0 0 white;
   background-color: rgba(0,0,0,0);
-  width: 150px;
+  width: 100px;
   height: 50px;
-  font-family: 'Dosis';
+  font-family: 'Montserrat';
   font-size: 14pt;
+  font-weight: normal;
+  color: white;
+  transition: width .6s ease, font-weight .6s ease, box-shadow .6s ease;
 }
 
 nav {
-  justify-content: space-around;
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
   margin: 0 auto;
 }
 
+.home-nav:hover {
+  width: 140px;
+  font-weight: bold;
+  box-shadow: 0 4px 0 0 white;
+  transition: width .6s ease, font-weight .6s ease, box-shadow .6s ease;
+}
+
 .title {
-  font-size: 300%;
+  font-size: 400%;
   margin: 20px;
-  letter-spacing: 3px;
+  font-weight: 900;
+  color: white;
 }
 
 .thin {
@@ -86,11 +101,12 @@ nav {
   height: 3000px;
   position: fixed;
   float: left;
-  margin-top: -150px;
+  margin-top: -170px;
 }
 
 .tree1 {
   position: fixed;
+  top: 0px;
   z-index: -1;
   float: left;
   width: 500px;
@@ -128,7 +144,7 @@ nav {
   top: 0;
   position: fixed;
   float: right;
-  margin-top: -110px;
+  margin-top: -130px;
 }
 
 .tree2 {
@@ -172,9 +188,59 @@ nav {
   transform: scaleX(-1);
 }
 
+.story-container {
+  display: flexbox;
+}
 
+.center-story {
+  width: 100vw;
+  height: 800px;
+  background-color: #9dd1d9;
+  text-align: center;
+  position: fixed;
+  /*float: center;*/
+  z-index: -4;
+}
 
+.center-story2 {
+  width: 100vw;
+  height: 800px;
+  background-color: #9dd1d9;
+  text-align: center;
+  position: fixed;
+  /*float: center;*/
+  z-index: -4;
+}
 
+.first-break {
+  height: 200px;
+}
+
+.second-break {
+  height: 300px;
+}
+
+.tagline {
+  color: white;
+  font-style: italic;
+  font-weight: normal;
+  margin:0;
+}
+
+.onwhite {
+  color: #F28430;
+  font-size: 350%;
+}
+
+.hill1 {
+  margin-top: 100px;
+  width: 100vw;
+  height: 800px;
+  background-image: url("https://i.imgur.com/j32Siul.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
 

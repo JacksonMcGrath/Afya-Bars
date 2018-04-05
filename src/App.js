@@ -76,7 +76,7 @@ class App extends Component {
     // LEFT SIDE
 
     let tree1 = document.querySelector(".tree1");
-    tree1.style.margin = -(window.pageYOffset * 1.75) + 'px ' + -(window.pageYOffset * 1.55) + 'px';
+    tree1.style.margin = -(window.pageYOffset * 2.85) + 'px ' + -(window.pageYOffset * 1.55) + 'px';
     tree1.style.width = (500 + (window.pageYOffset * .85)) + 'px';
 
     let tree3 = document.querySelector(".tree3");
@@ -106,13 +106,22 @@ class App extends Component {
     tree6.style.width = (300 + (window.pageYOffset * .65)) + 'px';
     tree6.style.height = (300 + (window.pageYOffset * .65)) + 'px';
 
+    // OTHER LAYERS
+
+    let hill1 = document.querySelector(".hill1");
+    // hill1.style.margin = (100 + (window.pageYOffset * .45)) + 'px 0 0 0';
+
+    let tagline = document.querySelector(".tagline");
+    tagline.style.margin = (window.pageYOffset * .15) + 'px 0 0 0';
+
+
   }
 
   render() {
     return (
       <div className="App">
         <style>
-          @import url('https://fonts.googleapis.com/css?family=Dosis|Londrina+Outline|Londrina+Solid');
+          @import url('https://fonts.googleapis.com/css?family=Montserrat');
         </style>
         <h1 className="title">Afya <span className="thin">Bars</span></h1>
         <nav>
@@ -126,67 +135,14 @@ class App extends Component {
         {this.state.register && <Register/>}
         {this.state.story && <Story/>}
         {this.state.user && <User/>}
-
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
-        <h1>dummy</h1>
+        <div className="first-break"></div>
+        <div className="tagline">
+          <h1>Welcome to a clean and healthy lifestyle</h1>
+        </div>
+        <div className="hill1">
+          <div className="second-break"></div>
+          <h1 className="onwhite">The choice is yours</h1>
+        </div>
       </div>
     );
   }

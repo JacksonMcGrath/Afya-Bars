@@ -13,7 +13,7 @@ class Story extends Component {
 
 		return (
 			
-			<div id="story">
+			<div id="story">	
 				<div className="float-left">
 					<div className="tree1"></div>
 					<div className="tree3"></div>

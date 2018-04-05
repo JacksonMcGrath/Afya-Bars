@@ -6,7 +6,6 @@ class IngredientList extends Component {
 		super()
 	
 		this.state = {
-			more: false,
 		}
 	}
 
@@ -14,9 +13,16 @@ class IngredientList extends Component {
 
 		return (
 			<div className="ingredient-list">
-				<ul className="ingredient-list">
-					<h2>IngredientList</h2> 
-				</ul>
+				<h3 className="ingredient">Almonds</h3>
+				<h3 className="ingredient">Peanuts</h3>
+				<h3 className="ingredient">Cashews</h3>
+				<h3 className="ingredient">Sunflower Seeds</h3>
+				<h3 className="ingredient">Chia Seeds</h3>
+				<h3 className="ingredient">Raisins</h3>
+				<h3 className="ingredient">Dried Cranberries</h3>
+				<h3 className="ingredient">Dried Goji Berries</h3>
+				<h3 className="ingredient">Chocolate Chips</h3>
+				<h3 className="ingredient">Penut Butter Chips</h3>
 			</div>
 		)
 	}

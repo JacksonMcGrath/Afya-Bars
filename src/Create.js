@@ -28,8 +28,32 @@ class Create extends Component {
 		return (
 			
 			<div id="create">
-				<VirtualBar almonds={this.almonds} peanuts={this.peanuts} cashews={this.cashews} sunflower_seeds={this.sunflower_seeds} chia_seeds={this.chia_seeds} raisins={this.raisins} dried_cranberries={this.dried_cranberries} dried_goji_berries={this.dried_goji_berries} chocolate_chips={this.chocolate_chips} penut_butter_chips={this.penut_butter_chips}/>
-				<IngredientList almonds={this.almonds} peanuts={this.peanuts} cashews={this.cashews} sunflower_seeds={this.sunflower_seeds} chia_seeds={this.chia_seeds} raisins={this.raisins} dried_cranberries={this.dried_cranberries} dried_goji_berries={this.dried_goji_berries} chocolate_chips={this.chocolate_chips} penut_butter_chips={this.penut_butter_chips}/>
+				<VirtualBar 
+					almonds={this.state.almonds} 
+					peanuts={this.state.peanuts} 
+					cashews={this.state.cashews} 
+					sunflower_seeds={this.state.sunflower_seeds} 
+					chia_seeds={this.state.chia_seeds} 
+					raisins={this.state.raisins} 
+					dried_cranberries={this.state.dried_cranberries} 
+					dried_goji_berries={this.state.dried_goji_berries} 
+					chocolate_chips={this.state.chocolate_chips} 
+					penut_butter_chips={this.state.penut_butter_chips}
+				/>
+
+				<IngredientList 
+					almonds={this.state.almonds} 
+					peanuts={this.state.peanuts} 
+					cashews={this.state.cashews} 
+					sunflower_seeds={this.state.sunflower_seeds} 
+					chia_seeds={this.state.chia_seeds} 
+					raisins={this.state.raisins} 
+					dried_cranberries={this.state.dried_cranberries} 
+					dried_goji_berries={this.state.dried_goji_berries} 
+					chocolate_chips={this.state.chocolate_chips} 
+					penut_butter_chips={this.state.penut_butter_chips}
+				/>
+				
 			</div> 
 
 		)

@@ -49,6 +49,7 @@ class App extends Component {
 
   toggleHome = () => {
     document.querySelector("#create").style.display = "none";
+    document.querySelector("#story").style.display = "block";
     const story = this.story;
     this.setState({
         story: !story

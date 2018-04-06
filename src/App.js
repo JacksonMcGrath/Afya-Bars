@@ -135,14 +135,6 @@ class App extends Component {
         {this.state.register && <Register/>}
         {this.state.story && <Story/>}
         {this.state.user && <User/>}
-        <div className="first-break"></div>
-        <div className="tagline">
-          <h1>Welcome to a clean and healthy lifestyle</h1>
-        </div>
-        <div className="hill1">
-          <div className="second-break"></div>
-          <h1 className="onwhite">The choice is yours</h1>
-        </div>
       </div>
     );
   }

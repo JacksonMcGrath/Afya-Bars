@@ -24,6 +24,14 @@ class Story extends Component {
 					<div className="tree4"></div>
 					<div className="tree6"></div>
 				</div>
+				<div className="first-break"></div>
+		        <div className="tagline">
+		          <h1>Welcome to a clean and healthy lifestyle</h1>
+		        </div>
+		        <div className="hill1">
+		          <div className="second-break"></div>
+		          <h1 className="onwhite">The choice is yours</h1>
+		        </div>
 			</div>
 
 		)

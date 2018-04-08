@@ -74,12 +74,19 @@ nav {
   margin: 0;
   width: 660px;
   height: 475px;
+  z-index: 2;
+}
+
+.ingredient-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .ingredient-list {
   background-color: white;
   margin: 0 0 0 20px;
-  width: 220px;
+  width: 280px;
   height: 475px;
 }
 

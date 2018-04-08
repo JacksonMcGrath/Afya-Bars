@@ -23,52 +23,25 @@ class App extends Component {
     super()
   
     this.state = {
-      create: false,
-      login: false,
-      register: false,
-      story: true,
-      user: false,
-      about: false,
-      login: false,
+      render: 'story',
     }
 
-    this.toggleHome = this.toggleHome.bind(this)
     this.toggleCreate = this.toggleCreate.bind(this)
-    this.toggleAbout = this.toggleAbout.bind(this)
-    this.toggleLogin = this.toggleLogin.bind(this)
+    this.toggleStory = this.toggleStory.bind(this)
     this.handleScroll = this.handleScroll.bind(this)
   }
 
+  toggleStory = () => {
+    const render = this.state.render
+    this.setState({
+      render: 'story'
+    })
+  }
+
   toggleCreate = () => {
-    document.querySelector("#story").style.display = "none";
-    const create = this.create;
+    const render = this.state.render
     this.setState({
-        create: !create
-    })
-  }
-
-  toggleHome = () => {
-    document.querySelector("#create").style.display = "none";
-    document.querySelector("#story").style.display = "block";
-    const story = this.story;
-    this.setState({
-        story: !story
-    })
-  }
-
-  toggleAbout = () => {
-    document.querySelector("#create").style.display = "none";
-    const about = this.about;
-    this.setState({
-        about: !about
-    })
-  }
-
-  toggleLogin = () => {
-    document.querySelector("#create").style.display = "none";
-    const login = this.login;
-    this.setState({
-        login: !login
+      render: 'create'
     })
   }
 
@@ -126,16 +99,13 @@ class App extends Component {
         </style>
         <h1 className="title">Afya <span className="thin">Bars</span></h1>
         <nav>
-          <button className="home-nav" onClick={this.toggleHome}>home</button>
+          <button className="home-nav" onClick={this.toggleStory}>home</button>
           <button className="home-nav" onClick={this.toggleCreate}>create</button>
           <button className="home-nav" onClick={this.toggleAbout}>about</button>
           <button className="home-nav" onClick={this.toggleLogin}>login</button>
         </nav>
-        {this.state.create && <Create/>}
-        {this.state.login && <Login/>}
-        {this.state.register && <Register/>}
-        {this.state.story && <Story/>}
-        {this.state.user && <User/>}
+        {this.state.render == 'story' && <Story/>}
+        {this.state.render == 'create' && <Create/>}
       </div>
     );
   }

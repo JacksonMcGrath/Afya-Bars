@@ -68,9 +68,11 @@ nav {
 }
 
 .virtual-bar {
-  background-image: url('https://i.imgur.com/Q2kWbZX.jpg');
-  background-size: 85%;
+  background-image: url('https://i.imgur.com/E2LimnD.jpg');
+  background-size: 80%;
   background-position: center;
+  background-color: white;
+  background-repeat: no-repeat;
   margin: 0;
   width: 660px;
   height: 475px;
@@ -78,9 +80,10 @@ nav {
 }
 
 .ingredient-overlay {
-  position: absolute;
+  position: relative;
   left: 0;
-  top: 0;
+  top: -28px;
+  height: 530px;
 }
 
 .ingredient-list {

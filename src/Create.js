@@ -50,16 +50,7 @@ class Create extends Component {
 			
 			<div id="create">
 				<div className="virtual-bar">
-					{this.state.almonds 				&				<img>src="https://i.imgur.com/mRn0vyE.jpg" className="ingredient-overlay" </img>}
-					{this.state.peanuts 				& 				<img>src="" className="ingredient-overlay" </img>}
-					{this.state.cashews 				& 				<img>src="" className="ingredient-overlay" </img>}
-					{this.state.sunflower_seeds 		& 				<img>src="" className="ingredient-overlay" </img>}
-					{this.state.chia_seeds 				& 				<img>src="" className="ingredient-overlay" </img>}
-					{this.state.raisins 				& 				<img>src="" className="ingredient-overlay" </img>}
-					{this.state.dried_cranberries 		& 				<img>src="" className="ingredient-overlay" </img>}
-					{this.state.dried_goji_berries 		& 				<img>src="" className="ingredient-overlay" </img>}
-					{this.state.chocolate_chips 		& 				<img>src="" className="ingredient-overlay" </img>}
-					{this.state.peanuts_butter_chips 	& 				<img>src="" className="ingredient-overlay" </img>}
+					<img src="https://i.imgur.com/EhTTk3k.png" className="ingredient-overlay"/>
 				</div>
 
 				<div className="ingredient-list">

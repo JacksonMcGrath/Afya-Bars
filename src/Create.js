@@ -38,7 +38,7 @@ class Create extends Component {
 
  	toggleAlmonds = () => {
  		console.log("toggleAlmonds was triggered");
-        const almonds = this.almonds;
+        const almonds = this.state.almonds;
         this.setState({
             almonds: !almonds
         })
@@ -50,7 +50,7 @@ class Create extends Component {
 			
 			<div id="create">
 				<div className="virtual-bar">
-					<img src="https://i.imgur.com/EhTTk3k.png" className="ingredient-overlay"/>
+					{this.state.almonds && <img src="https://i.imgur.com/EhTTk3k.png" className="ingredient-overlay"/>}
 				</div>
 
 				<div className="ingredient-list">

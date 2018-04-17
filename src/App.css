@@ -282,7 +282,7 @@ nav {
   width: 50vw;
   font-size: 300%;
   color: grey;
-  margin: 120px 0 0 0;
+  margin: 140px 0 0 0;
   color: #F28430;
 }
 
@@ -292,20 +292,22 @@ nav {
   padding: 0 5vw;
   font-size: 150%;
   color: grey;
-  margin: 120px 0 0 0;
+  margin: 140px 0 0 0;
 }
 
 .about {
   display: inline-flex;
   background-color: white;
-  height: 460px;
+  min-height: 460px;
   margin: 40px 0 0 0;
+  padding-bottom: 40px;
 }
 
 .login {
   background-color: white;
-  height: 460px;
+  min-height: 460px;
   margin: 40px 0 0 0;
+  padding-bottom: 40px;
 }
 
 .login-buffer {

@@ -8,6 +8,7 @@ import Login from './Login'
 import Register from './Register'
 import Story from './Story'
 import User from './User'
+import About from './About'
 
 class App extends Component {
 
@@ -27,7 +28,9 @@ class App extends Component {
     }
 
     this.toggleCreate = this.toggleCreate.bind(this)
+    this.toggleAbout = this.toggleAbout.bind(this)
     this.toggleStory = this.toggleStory.bind(this)
+    this.toggleLogin = this.toggleLogin.bind(this)
     this.handleScroll = this.handleScroll.bind(this)
   }
 
@@ -42,6 +45,20 @@ class App extends Component {
     const render = this.state.render
     this.setState({
       render: 'create'
+    })
+  }
+
+  toggleAbout = () => {
+    const render = this.state.render
+    this.setState({
+      render: 'about'
+    })
+  }
+
+  toggleLogin = () => {
+    const render = this.state.render
+    this.setState({
+      render: 'login'
     })
   }
 
@@ -106,6 +123,8 @@ class App extends Component {
         </nav>
         {this.state.render == 'story' && <Story/>}
         {this.state.render == 'create' && <Create/>}
+        {this.state.render == 'about' && <About/>}
+        {this.state.render == 'login' && <Login/>}
       </div>
     );
   }

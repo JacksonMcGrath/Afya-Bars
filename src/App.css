@@ -57,8 +57,9 @@ nav {
 }
 
 #create {
-  margin: 0 auto;
-  margin-top: 20px;
+  position: absolute;
+  left: 240px;
+  top: 200px;
   background-color: grey;
   width: 960px;
   height: 480px;
@@ -80,10 +81,16 @@ nav {
 }
 
 .ingredient-overlay {
-  position: relative;
-  left: 0;
-  top: -28px;
+  position: absolute;
+  float: center;
+  clear: all;
+  left: 85px;
+  top: -10px;
   height: 530px;
+}
+
+#raisins {
+  z-index: 4;
 }
 
 .ingredient-list {
@@ -91,6 +98,21 @@ nav {
   margin: 0 0 0 20px;
   width: 280px;
   height: 475px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.ingredient {
+  width: 278px;
+  height: 80px;
+  border: 1px solid lightgrey;
+  background-color: white;
+  font-size: 14pt;
+  font-family: 'Montserrat';
+}
+
+.inactive {
+  color: lightgrey;
 }
 
 /*nutrition component to be added later*/
@@ -255,7 +277,63 @@ nav {
   background-repeat: no-repeat;
 }
 
+.half-label {
+  display: block;
+  width: 50vw;
+  font-size: 300%;
+  color: grey;
+  margin: 120px 0 0 0;
+  color: #F28430;
+}
 
+.half-paragraph {
+  display: block;
+  width: 40vw;
+  padding: 0 5vw;
+  font-size: 150%;
+  color: grey;
+  margin: 120px 0 0 0;
+}
+
+.about {
+  display: inline-flex;
+  background-color: white;
+  height: 460px;
+  margin: 40px 0 0 0;
+}
+
+.login {
+  background-color: white;
+  height: 460px;
+  margin: 40px 0 0 0;
+}
+
+.login-buffer {
+  background-color: white;
+  width: 100vw;
+  height: 80px;
+}
+
+.login-button-container {
+  display: inline-flex;
+  justify-content: space-around;
+  margin: 40px;
+  width: 360px;
+}
+
+.login-button {
+  width: 150px;
+  height: 30px;
+  border: none;
+  background-color: lightgrey;
+  font-family: 'Montserrat';
+}
+
+.login-input {
+  width: 360px;
+  height:30px;
+  font-size: 120%;
+}
 
 
 

@@ -331,6 +331,15 @@ nav {
   font-family: 'Montserrat';
 }
 
+.logout-button {
+  margin-top: 20px;
+  width: 150px;
+  height: 30px;
+  border: none;
+  background-color:  #F28430;
+  font-family: 'Montserrat';
+}
+
 .login-input {
   width: 360px;
   height:30px;

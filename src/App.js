@@ -10,6 +10,8 @@ import Story from './Story'
 import User from './User'
 import About from './About'
 
+// --- FIREBASE ---
+import {firebaseApp} from './firebase.js'
 
 class App extends Component {
 
@@ -18,12 +20,30 @@ class App extends Component {
   
     this.state = {
       render: 'story',
+      loggedIn: false,
     }
 
     this.toggleCreate = this.toggleCreate.bind(this)
     this.toggleAbout = this.toggleAbout.bind(this)
     this.toggleStory = this.toggleStory.bind(this)
     this.toggleLogin = this.toggleLogin.bind(this)
+  }
+
+  componentDidMount = () => {
+    firebaseApp.auth().onAuthStateChanged(user => {
+      if (user) {
+        console.log('app auth switch on');
+        this.setState({
+          render: 'story'
+        })
+        // console.log('the .userInfo: ', firebaseApp.userInfo);
+      } else {
+        console.log('app auth switch off');
+          this.setState({
+            loggedIn: false,
+          })
+      }
+    })
   }
 
   toggleStory = () => {
@@ -61,6 +81,7 @@ class App extends Component {
           @import url('https://fonts.googleapis.com/css?family=Montserrat');
         </style>
         <h1 className="title">Afya <span className="thin">Bars</span></h1>
+        {this.state.loggedIn}
         <nav>
           <button className="home-nav" onClick={this.toggleStory}>home</button>
           <button className="home-nav" onClick={this.toggleCreate}>create</button>

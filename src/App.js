@@ -34,7 +34,8 @@ class App extends Component {
       if (user) {
         console.log('app auth switch on');
         this.setState({
-          render: 'story'
+          render: 'story',
+          loggedIn: true
         })
         // console.log('the .userInfo: ', firebaseApp.userInfo);
       } else {
@@ -86,7 +87,8 @@ class App extends Component {
           <button className="home-nav" onClick={this.toggleStory}>home</button>
           <button className="home-nav" onClick={this.toggleCreate}>create</button>
           <button className="home-nav" onClick={this.toggleAbout}>about</button>
-          <button className="home-nav" onClick={this.toggleLogin}>login</button>
+          {this.state.loggedIn == false && <button className="home-nav" onClick={this.toggleLogin}>login</button>}
+          {this.state.loggedIn == true && <button className="home-nav small-nav" onClick={this.toggleLogin}>logged in</button>}
         </nav>
         {this.state.render == 'story' && <Story/>}
         {this.state.render == 'create' && <Create/>}

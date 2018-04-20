@@ -15,6 +15,7 @@ class Login extends Component {
 				message: ''
 			},
 			loggedIn: false,
+			userEmail: ''
 		}
 
 		this.onSignUp = this.onSignUp.bind(this);
@@ -30,7 +31,7 @@ class Login extends Component {
 		    console.log();
 		    this.setState({
 		    	loggedIn: true,
-		    	email: user.email
+		    	userEmail: user.email
 		    })
 		  } else {
 		    console.log('the user is not signed in');
@@ -94,7 +95,7 @@ class Login extends Component {
 				<div>{this.state.error.message}</div>
 				{this.state.loggedIn && 
 					<div>
-						<div>Welcome, you are logged in as {this.state.email}</div>
+						<p className="login-subtext">You are curretly logged in as <span className="green-text">{this.state.userEmail}</span></p>
 						<button className="logout-button" onClick={this.signOut}>Sign Out</button>
 					</div>
 				}
